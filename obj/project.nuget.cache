@@ -1,0 +1,18 @@
+{
+  "version": 2,
+  "dgSpecHash": "vn3mURJ1lz56OinKLKJ4zveb2xyW7ul9ePN6G2q4FZjX6j6tFpAGx59E36xbbg0hxJpgGD1dWc15J00c3CFIFA==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\alejandrio.vasay\\Documents\\Visual Studio 2022\\blog 2022\\ProjectCache\\HttpGetRandomImageWebAPI\\HttpGetRandomImageWebAPI.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\alejandrio.vasay\\.nuget\\packages\\microsoft.extensions.caching.abstractions\\6.0.0-rc.1.21451.13\\microsoft.extensions.caching.abstractions.6.0.0-rc.1.21451.13.nupkg.sha512",
+    "C:\\Users\\alejandrio.vasay\\.nuget\\packages\\microsoft.extensions.caching.memory\\6.0.0-rc.1.21451.13\\microsoft.extensions.caching.memory.6.0.0-rc.1.21451.13.nupkg.sha512",
+    "C:\\Users\\alejandrio.vasay\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\6.0.0-rc.1.21451.13\\microsoft.extensions.dependencyinjection.abstractions.6.0.0-rc.1.21451.13.nupkg.sha512",
+    "C:\\Users\\alejandrio.vasay\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\6.0.0-rc.1.21451.13\\microsoft.extensions.logging.abstractions.6.0.0-rc.1.21451.13.nupkg.sha512",
+    "C:\\Users\\alejandrio.vasay\\.nuget\\packages\\microsoft.extensions.options\\6.0.0-rc.1.21451.13\\microsoft.extensions.options.6.0.0-rc.1.21451.13.nupkg.sha512",
+    "C:\\Users\\alejandrio.vasay\\.nuget\\packages\\microsoft.extensions.primitives\\6.0.0-rc.1.21451.13\\microsoft.extensions.primitives.6.0.0-rc.1.21451.13.nupkg.sha512",
+    "C:\\Users\\alejandrio.vasay\\.nuget\\packages\\system.buffers\\4.5.1\\system.buffers.4.5.1.nupkg.sha512",
+    "C:\\Users\\alejandrio.vasay\\.nuget\\packages\\system.memory\\4.5.4\\system.memory.4.5.4.nupkg.sha512",
+    "C:\\Users\\alejandrio.vasay\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.0.0-rc.1.21451.13\\system.runtime.compilerservices.unsafe.6.0.0-rc.1.21451.13.nupkg.sha512"
+  ],
+  "logs": []
+}

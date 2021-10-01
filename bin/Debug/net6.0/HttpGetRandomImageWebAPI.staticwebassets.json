@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "gCXuLBgSyMPbQBPlkq3cHEXrbS/xhQW4LdF3hPEnIoE=",
+  "Source": "HttpGetRandomImageWebAPI",
+  "BasePath": "_content/HttpGetRandomImageWebAPI",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "RelatedManifests": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
