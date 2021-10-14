@@ -1,16 +1,16 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 
-using Microsoft.Extensions.Caching.Memory;
-
 namespace HttpGetRandomImageWebAPI.Controllers;
 
 [Route("[controller]/[action]")]
 public class ImageController : Controller
 {
-    IMemoryCache m_memoryCache;
-    public ImageController(IMemoryCache memoryCache)
+    IImageCacher m_imageCacher;
+    IDirectoryCacher m_directoryCacher;
+    public ImageController(IDirectoryCacher dirCacher ,IImageCacher imageCacher)
     {
-        m_memoryCache = memoryCache;
+        m_imageCacher = imageCacher;
+        m_directoryCacher = dirCacher;
     }
 
     public IActionResult Index()
@@ -22,28 +22,26 @@ public class ImageController : Controller
     public ActionResult Random(string dirPath)
     {
         string msg = string.Empty;
+
         if (dirPath != null)
         {
+            byte[] byteArray = { byte.MinValue };
             try
             {
                 string localPath = Path.Combine(Environment.CurrentDirectory, "Images", dirPath);
-                DirectoryCacher dirCacher = new DirectoryCacher(m_memoryCache, localPath);
-
-                List<string> listCache = dirCacher.GetListCache();
+               
+                List<string> listCache = m_directoryCacher.GetListCache(localPath);
 
                 // Get a random filename from the cache
                 string pickedRandomImage = PickRandomFromCache(listCache);
 
-                // Instantiate the ImageCacher object
-                ImageCacher imageCacher = new ImageCacher(m_memoryCache, pickedRandomImage);
-
-                msg = imageCacher.GetImage() + " -- " + pickedRandomImage;
+                byteArray = m_imageCacher.GetImage(pickedRandomImage);
             }
             catch (Exception ex)
             {
                 // Log something
             }
-            return Content(msg);
+            return File(byteArray, "image/jpeg");
         }
         else
         {

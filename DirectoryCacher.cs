@@ -7,38 +7,40 @@ using System.Threading.Tasks;
 using Microsoft.Extensions.Caching.Memory;
 
 namespace HttpGetRandomImageWebAPI;
-public class DirectoryCacher
+
+public interface IDirectoryCacher
+{
+    List<string> GetListCache(string path);
+}
+
+public class DirectoryCacher : IDirectoryCacher
 {
     IMemoryCache m_memoryCache;
-    private string m_path;
 
-    public DirectoryCacher(IMemoryCache memoryCache, string path)
+    public DirectoryCacher(IMemoryCache memoryCache)
     {
         m_memoryCache = memoryCache;
+    }
+
+    public List<string> GetListCache(string path)
+    {
+        List<string> cacheList = new List<string>();
 
         var dirInfo = new DirectoryInfo(path);
         if (dirInfo.Exists)
         {
-            m_path = path;
+            m_memoryCache.TryGetValue(path, out cacheList);
+
+            if (cacheList == null)
+            {
+                BuildCache(path);
+                m_memoryCache.TryGetValue(path, out cacheList);
+            }
         }
         else
         {
             throw new DirectoryNotFoundException();
-        };
-
-    }
-
-    public List<string> GetListCache()
-    {
-        List<string> cacheList = new List<string>();
-        m_memoryCache.TryGetValue(m_path, out cacheList);
-
-        if (cacheList == null)
-        {
-            BuildCache(m_path);
-            m_memoryCache.TryGetValue(m_path, out cacheList);
         }
-
         return (List<string>)cacheList;
     }
 
