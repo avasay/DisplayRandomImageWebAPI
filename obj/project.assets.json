@@ -358,11 +358,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\alejandrio.vasay\\Documents\\Visual Studio 2022\\blog 2022\\ProjectCacheSingleton\\HttpGetRandomImageWebAPI\\HttpGetRandomImageWebAPI.csproj",
+      "projectUniqueName": "C:\\Users\\alejandrio.vasay\\Documents\\Visual Studio 2022\\blog 2022\\GitHub\\DisplayRandomImageWebAPI\\HttpGetRandomImageWebAPI.csproj",
       "projectName": "HttpGetRandomImageWebAPI",
-      "projectPath": "C:\\Users\\alejandrio.vasay\\Documents\\Visual Studio 2022\\blog 2022\\ProjectCacheSingleton\\HttpGetRandomImageWebAPI\\HttpGetRandomImageWebAPI.csproj",
+      "projectPath": "C:\\Users\\alejandrio.vasay\\Documents\\Visual Studio 2022\\blog 2022\\GitHub\\DisplayRandomImageWebAPI\\HttpGetRandomImageWebAPI.csproj",
       "packagesPath": "C:\\Users\\alejandrio.vasay\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\alejandrio.vasay\\Documents\\Visual Studio 2022\\blog 2022\\ProjectCacheSingleton\\HttpGetRandomImageWebAPI\\obj\\",
+      "outputPath": "C:\\Users\\alejandrio.vasay\\Documents\\Visual Studio 2022\\blog 2022\\GitHub\\DisplayRandomImageWebAPI\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\",
@@ -419,7 +419,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.100-preview.7.21379.14\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.100\\RuntimeIdentifierGraph.json"
       }
     }
   }

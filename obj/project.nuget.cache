@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "w0mRXM1SEN2TQFvAVgN3xNIfgBUN/E9/Akw3Sx+7NMINfLZ6hOMfP0w0ilvWmG2FkUG1HQIum1vH8H7UJk/bJQ==",
+  "dgSpecHash": "ujUBSamhFNndXBLYd7n0g2JicUAJ8viKhBNHD//UgAXq3o//q4x+WO6MNbuHMas5c/D88zQXL6HrlefwiMzrmg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\alejandrio.vasay\\Documents\\Visual Studio 2022\\blog 2022\\ProjectCacheSingleton\\HttpGetRandomImageWebAPI\\HttpGetRandomImageWebAPI.csproj",
+  "projectFilePath": "C:\\Users\\alejandrio.vasay\\Documents\\Visual Studio 2022\\blog 2022\\GitHub\\DisplayRandomImageWebAPI\\HttpGetRandomImageWebAPI.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\alejandrio.vasay\\.nuget\\packages\\microsoft.extensions.caching.abstractions\\6.0.0-rc.1.21451.13\\microsoft.extensions.caching.abstractions.6.0.0-rc.1.21451.13.nupkg.sha512",
     "C:\\Users\\alejandrio.vasay\\.nuget\\packages\\microsoft.extensions.caching.memory\\6.0.0-rc.1.21451.13\\microsoft.extensions.caching.memory.6.0.0-rc.1.21451.13.nupkg.sha512",
